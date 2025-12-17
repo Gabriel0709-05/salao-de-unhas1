@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Salão de Unhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vitoria Barboza Studio</h1>
+        <p>Realçando sua beleza em cada detalhe</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Studio</h2>
+            <p>
+                Aqui você encontra um ambiente acolhedor e profissional dedicada a cuidar das suas unhas com todo o carinho e atenção que você merece. Nossa missão é proporcionar uma experiência única, realçando sua beleza e autoestima.
+            </p>
+
+        <section>
+        <h2>Horario de funcionamento</h2>
+        <p>Segunda a sexta: Das 14h às 18h</p>
+        <p>Obs: Horario conforme agendamento, caso queira cancelar a cliente tem 3hrs antes do horario marcado, caso contrario haverá uma taxa de R$10,00</p>
+        </section>
+            <h2>Serviços</h2>
+            <section id="galeria">
+    <h2>Alguns dos nossos trabalhos</h2>
+
+    <div class="galeria">
+    <img src="imagens/unhas1.jpeg" alt="Unhas decoradas">
+    <img src="imagens/unhas2.jpeg" alt="Unhas em gel">
+    <img src="imagens/unhas3.jpeg" alt="Nail art">
+</div>
+
+</section>
+
+
+            <section id="contato">
+    <h2>Agende seu horário</h2>
+    <p>Entre em contato pelo WhatsApp e garanta seu atendimento.</p>
+
+    <a class="whatsapp-button" 
+       href="https://wa.me/55996022226" 
+       target="_blank">
+        Chamar no WhatsApp
+    </a>
+</section>
+
+            <h3>Cuidados Basicos</h3>
+            <ul>
+                <li>Manicure</li>
+                <li>Pedicure</li>
+            </ul>
+            <h3>Tratamentos Especiais</h3>
+            <ul>
+                <li>Unha em gel</li>
+                <li>Alongamento de unhas</li>
+                <li>Nail art</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Vitoria Barboza Studio</p>
+    </footer>
+
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf2f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #e91e63;
+}
+
+footer {
+    background-color: #fce4ec;
+    color: #555;
+    font-size: 14px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #c2185b;
+}
+p {
+    line-height: 1.6;
+}
+#contato {
+    text-align: center;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5d;
+}
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .whatsapp-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+h2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e91e63;
+    margin-top: 8px;
+}
+* {
+    transition: 0.3s;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
